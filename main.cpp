@@ -116,7 +116,7 @@ public:
 	  else
 	  {
 		  pCurrent->pNext = pPrevious->pNext;    // Pointer of Current Node contains the Address of previous Node
-		  pPrevious = pCurrent;
+		  pPrevious ->pNext  = pCurrent;             // Just corrected : added ->pNext
 	  }
   }
 
